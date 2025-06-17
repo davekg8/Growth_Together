@@ -1,0 +1,71 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8; /* Light blue-gray background */
+    color: #333;
+}
+.section-title {
+    color: #009640; /* Green for titles */
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.header {
+    background: linear-gradient(to right, #009640, #009fe3); /* Green to Blue gradient */
+    color: #ffffff;
+    padding: 3rem 0;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.button-primary {
+    background-color: #009640; /* Green */
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.button-primary:hover {
+    background-color: #007a33; /* Darker green on hover */
+}
+.timeline-item {
+    position: relative;
+    padding-left: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.25rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: #009fe3; /* Blue */
+    border-radius: 50%;
+    border: 3px solid #009640; /* Green border */
+}
+.prize-card {
+    background-color: #e6f7ff; /* Lighter blue for prize cards */
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid #009fe3; /* Blue border */
+}
+.prize-card h3 {
+    color: #009640; /* Green */
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
