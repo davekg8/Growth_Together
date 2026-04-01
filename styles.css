@@ -1,0 +1,22 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc; /* Modern minimal gray/blue background */
+    color: #1e293b;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Scrollbar customizations */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #009fe3;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #009640;
+}
