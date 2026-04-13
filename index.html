@@ -3,248 +3,321 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Growth Together - Forum Entrepreneurial</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body class="antialiased">
+    <title>Growth Together | Éveillés pour réveiller une génération</title>
+    <meta name="description" content="Growth Together – Association à but non lucratif dédiée à l'éveil et l'accompagnement de la jeunesse africaine vers l'entrepreneuriat, l'excellence et la transformation personnelle.">
 
-    <!-- Header Section -->
-    <header class="bg-gradient-to-r from-[#009640] to-[#009fe3] text-white min-h-[80vh] flex flex-col justify-center items-center text-center rounded-b-[3rem] shadow-2xl relative overflow-hidden px-4 py-16">
-        <div class="container mx-auto z-10" data-aos="zoom-in" data-aos-duration="1000">
-            <div class="bg-white/10 backdrop-blur-sm p-8 rounded-3xl inline-block shadow-lg border border-white/20">
-                <img src="logo GT  sans grothw.png" alt="Growth Together Logo" class="mx-auto mb-6 rounded-full shadow-2xl hover:scale-105 transition duration-300" width="180">
-                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight tracking-tight text-white drop-shadow-md">GROWTH TOGETHER FORUM</h1>
-                <h2 class="text-2xl md:text-3xl font-bold mb-4 text-[#e6f7ff] tracking-wide">ÉDITION N°1</h2>
-                <p class="text-xl md:text-2xl font-medium mb-8 text-white/90">OSER POUR LE CHANGEMENT</p>
-                <a href="#contact" class="bg-white text-[#009640] hover:bg-[#f0f4f8] hover:text-[#009fe3] font-bold py-4 px-10 rounded-full text-lg shadow-[0_0_15px_rgba(255,255,255,0.4)] hover:shadow-[0_0_25px_rgba(255,255,255,0.6)] transform hover:-translate-y-1 transition-all duration-300 inline-block uppercase tracking-wider">
-                    Postulez Maintenant !
-                </a>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container nav-content">
+            <a href="index.html" class="logo-link">
+                <img src="assets/logo.png" alt="Growth Together Logo" class="logo">
+                <span class="logo-text">Growth Together</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#objectifs">Objectifs</a></li>
+                <li><a href="#activites">Activités</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="forum/index.html" class="btn btn-outline" id="nav-cta">Forum 2026 <i class="fas fa-arrow-right"></i></a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
-        <!-- Decorative elements -->
-        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20 pointer-events-none">
-            <div class="absolute -top-20 -left-20 w-64 h-64 rounded-full bg-white blur-3xl mix-blend-overlay"></div>
-            <div class="absolute bottom-10 right-10 w-80 h-80 rounded-full bg-[#009fe3] blur-3xl mix-blend-overlay"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg">
+            <div class="glow glow-1"></div>
+            <div class="glow glow-2"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="badge fade-in-up">Association à but non lucratif</div>
+            <h1 class="hero-title fade-in-up delay-1">Éveillés pour <span class="accent">réveiller</span> une génération</h1>
+            <p class="hero-subtitle fade-in-up delay-2">Nous accompagnons la jeunesse africaine vers l'entrepreneuriat, l'excellence et la transformation personnelle. Ensemble, bâtissons un avenir où chaque jeune est acteur de son propre changement.</p>
+
+            <div class="hero-cta fade-in-up delay-3" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="#about" class="btn btn-primary btn-large">Découvrir GT <i class="fas fa-chevron-down"></i></a>
+                <a href="forum/index.html" class="btn btn-secondary btn-large">Forum 2026 <i class="fas fa-arrow-right"></i></a>
+            </div>
         </div>
     </header>
 
-    <main class="container mx-auto px-4 py-12">
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text slide-in-left">
+                    <h2 class="section-title">Notre <span class="accent">Mission</span></h2>
+                    <p>Growth Together est une association à but non lucratif fondée en octobre 2024, née d'une conviction profonde : chaque jeune africain porte en lui le potentiel de transformer sa propre vie et celle de sa communauté.</p>
+                    <p>Areligieuse, apolitique et non syndicale, GT a pour mission de pousser une jeunesse africaine à se déployer dans sa potentialité, en lui offrant les outils, le réseau et l'accompagnement nécessaires pour entreprendre et exceller.</p>
 
-        <!-- Présentation du Concours Section -->
-        <section id="presentation" class="mb-20 pt-10" data-aos="fade-up">
-            <h2 class="text-3xl md:text-5xl font-extrabold text-[#009640] mb-12 text-center uppercase tracking-wider relative">
-                Présentation du concours
-                <span class="block w-24 h-1 bg-[#009fe3] mx-auto mt-4 rounded-full"></span>
-            </h2>
-            <div class="bg-white rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_15px_50px_rgba(0,0,0,0.12)] transition-shadow duration-300 p-8 md:p-12 border border-gray-100">
-                <h3 class="text-3xl font-bold mb-6 text-center text-gray-800">INTRODUCTION</h3>
-                <p class="text-lg md:text-xl leading-relaxed text-gray-600 text-justify md:text-center max-w-4xl mx-auto">
-                    Dans un monde en mutation rapide, où les défis sont aussi grands que les opportunités, les jeunes africains représentent une force de proposition et d'innovation. C'est dans cette dynamique que naît le concours <strong class="text-[#009fe3]">"Oser pour le changement"</strong>, une initiative panafricaine qui vise à révéler, soutenir et propulser les projets d'étudiants africains vivant au Maroc, porteurs d'une vision audacieuse et de solutions concrètes pour l'Afrique de demain.
-                </p>
-                <div class="mt-12 flex justify-center group overflow-hidden rounded-2xl shadow-xl">
-                    <img src="image.png" alt="Image de présentation du concours" class="w-full max-w-4xl object-cover transform group-hover:scale-105 transition duration-700">
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Accompagnement entrepreneurial</li>
+                        <li><i class="fas fa-check-circle"></i> Développement personnel & leadership</li>
+                        <li><i class="fas fa-check-circle"></i> Réseau panafricain de jeunes acteurs</li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-
-        <!-- Objectifs Stratégiques Section -->
-        <section id="objectifs" class="mb-20" data-aos="fade-up" data-aos-delay="100">
-            <h2 class="text-3xl md:text-5xl font-extrabold text-[#009640] mb-12 text-center uppercase tracking-wider relative">
-                Objectifs Stratégiques
-                <span class="block w-24 h-1 bg-[#009fe3] mx-auto mt-4 rounded-full"></span>
-            </h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-white rounded-2xl shadow-lg hover:-translate-y-3 hover:shadow-2xl transition duration-300 flex flex-col items-center text-center p-8 border-t-4 border-[#009fe3]">
-                    <div class="bg-[#e6f7ff] p-4 rounded-full mb-6">
-                        <svg class="w-10 h-10 text-[#009fe3]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <div class="about-visual slide-in-right">
+                    <div class="glass-card main-card">
+                        <i class="fas fa-seedling card-icon"></i>
+                        <h3>Growth Together</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Grandir ensemble, transformer l'Afrique</p>
                     </div>
-                    <h3 class="text-lg font-bold mb-3 text-gray-800">ÉVEILLER LA CONSCIENCE D'ENGAGEMENT</h3>
-                    <p class="text-gray-600 font-medium">Chez les jeunes Africains.</p>
-                </div>
-                <div class="bg-white rounded-2xl shadow-lg hover:-translate-y-3 hover:shadow-2xl transition duration-300 flex flex-col items-center text-center p-8 border-t-4 border-[#009640]">
-                    <div class="bg-[#e6ffe6] p-4 rounded-full mb-6">
-                        <svg class="w-10 h-10 text-[#009640]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    <div class="glass-card secondary-card card-1 scale-in">
+                        <i class="fas fa-globe-africa"></i>
+                        <h4>Panafricain</h4>
                     </div>
-                    <h3 class="text-lg font-bold mb-3 text-gray-800">ENCOURAGER LA PRISE D'INITIATIVES</h3>
-                    <p class="text-gray-600 font-medium">Et l'entrepreneuriat responsable.</p>
-                </div>
-                <div class="bg-white rounded-2xl shadow-lg hover:-translate-y-3 hover:shadow-2xl transition duration-300 flex flex-col items-center text-center p-8 border-t-4 border-[#009fe3]">
-                    <div class="bg-[#e6f7ff] p-4 rounded-full mb-6">
-                        <svg class="w-10 h-10 text-[#009fe3]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 01-4 4H6"></path></svg>
-                    </div>
-                    <h3 class="text-lg font-bold mb-3 text-gray-800">FAVORISER LA RENCONTRE</h3>
-                    <p class="text-gray-600 font-medium">Entre jeunes porteurs de projets, mentors, incubateurs et investisseurs.</p>
-                </div>
-                <div class="bg-white rounded-2xl shadow-lg hover:-translate-y-3 hover:shadow-2xl transition duration-300 flex flex-col items-center text-center p-8 border-t-4 border-[#009640]">
-                    <div class="bg-[#e6ffe6] p-4 rounded-full mb-6">
-                        <svg class="w-10 h-10 text-[#009640]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                    </div>
-                    <h3 class="text-lg font-bold mb-3 text-gray-800">RENFORCER LES COMPÉTENCES</h3>
-                    <p class="text-gray-600 font-medium">Transversales des étudiants Africains au Maroc.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Conditions de Participation Section -->
-        <section id="conditions" class="mb-20" data-aos="fade-up" data-aos-delay="200">
-            <h2 class="text-3xl md:text-5xl font-extrabold text-[#009640] mb-12 text-center uppercase tracking-wider relative">
-                Conditions de Participation
-                <span class="block w-24 h-1 bg-[#009fe3] mx-auto mt-4 rounded-full"></span>
-            </h2>
-            <div class="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 p-8 md:p-12 max-w-4xl mx-auto border border-gray-100">
-                <ul class="space-y-6">
-                    <li class="flex items-start">
-                        <div class="flex-shrink-0 mt-1">
-                            <svg class="w-6 h-6 text-[#009fe3]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                        </div>
-                        <p class="ml-4 text-lg text-gray-700">Être âgé de <strong>17 à 30 ans</strong>.</p>
-                    </li>
-                    <li class="flex items-start">
-                        <div class="flex-shrink-0 mt-1">
-                            <svg class="w-6 h-6 text-[#009640]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                        </div>
-                        <p class="ml-4 text-lg text-gray-700">Être porteur d'un projet à impact social, économique, environnemental ou culturel.</p>
-                    </li>
-                    <li class="flex items-start">
-                        <div class="flex-shrink-0 mt-1">
-                            <svg class="w-6 h-6 text-[#009fe3]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                        </div>
-                        <p class="ml-4 text-lg text-gray-700">Le projet doit être en phase d'idée, de prototypage ou de pré-lancement.</p>
-                    </li>
-                    <li class="flex items-start">
-                        <div class="flex-shrink-0 mt-1">
-                            <svg class="w-6 h-6 text-[#009640]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                        </div>
-                        <p class="ml-4 text-lg text-gray-700">Être seul(e) ou 4 au maximum et être inscrit(e) dans un établissement supérieur au Maroc.</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Déroulement Section -->
-        <section id="deroulement" class="mb-20" data-aos="fade-up">
-            <h2 class="text-3xl md:text-5xl font-extrabold text-[#009640] mb-12 text-center uppercase tracking-wider relative">
-                Déroulement
-                <span class="block w-24 h-1 bg-[#009fe3] mx-auto mt-4 rounded-full"></span>
-            </h2>
-            <div class="max-w-4xl mx-auto relative pl-8 md:pl-0">
-                <div class="absolute left-8 md:left-1/2 top-0 h-full w-1 bg-gradient-to-b from-[#009640] to-[#009fe3] transform md:-translate-x-1/2 rounded-full hidden md:block"></div>
-
-                <div class="relative mb-12 md:flex md:items-center md:justify-between w-full" data-aos="fade-up" data-aos-delay="100">
-                    <div class="hidden md:block md:w-5/12"></div>
-                    <div class="absolute left-[-41px] md:left-1/2 w-6 h-6 rounded-full bg-white border-4 border-[#009640] transform md:-translate-x-1/2 flex items-center justify-center z-10 shadow-lg"></div>
-                    <div class="bg-white rounded-2xl shadow-lg p-6 md:w-5/12 hover:shadow-xl hover:-translate-y-2 transition duration-300 border-l-4 border-[#009640]">
-                        <h3 class="text-xl font-extrabold text-[#009640] mb-2">12 JUIN</h3>
-                        <h4 class="text-lg font-bold text-gray-800 mb-2">APPEL À CANDIDATURE</h4>
-                        <p class="text-gray-600">Les candidatures se feront via formulaire, dossier de présentation (photocopie passeport + attestation d'inscription) et une vidéo pitch.</p>
-                    </div>
-                </div>
-
-                <div class="relative mb-12 md:flex md:items-center md:justify-between w-full flex-row-reverse" data-aos="fade-up" data-aos-delay="200">
-                    <div class="hidden md:block md:w-5/12"></div>
-                    <div class="absolute left-[-41px] md:left-1/2 w-6 h-6 rounded-full bg-white border-4 border-[#009fe3] transform md:-translate-x-1/2 flex items-center justify-center z-10 shadow-lg"></div>
-                    <div class="bg-white rounded-2xl shadow-lg p-6 md:w-5/12 hover:shadow-xl hover:-translate-y-2 transition duration-300 border-r-4 border-l-4 md:border-l-0 border-[#009fe3]">
-                        <h3 class="text-xl font-extrabold text-[#009fe3] mb-2">20 JUILLET</h3>
-                        <h4 class="text-lg font-bold text-gray-800 mb-2">SÉLECTION DES 10 FINALISTES</h4>
-                        <p class="text-gray-600">Une analyse des projets se fera par le comité d'experts sur la base de ces 4 critères : originalité, faisabilité, motivation et impact.</p>
-                    </div>
-                </div>
-
-                <div class="relative mb-12 md:flex md:items-center md:justify-between w-full" data-aos="fade-up" data-aos-delay="300">
-                    <div class="hidden md:block md:w-5/12"></div>
-                    <div class="absolute left-[-41px] md:left-1/2 w-6 h-6 rounded-full bg-white border-4 border-[#009640] transform md:-translate-x-1/2 flex items-center justify-center z-10 shadow-lg"></div>
-                    <div class="bg-white rounded-2xl shadow-lg p-6 md:w-5/12 hover:shadow-xl hover:-translate-y-2 transition duration-300 border-l-4 border-[#009640]">
-                        <h3 class="text-xl font-extrabold text-[#009640] mb-2">À PARTIR DU 21 JUILLET</h3>
-                        <h4 class="text-lg font-bold text-gray-800 mb-2">COACHING ET ACCOMPAGNEMENT</h4>
-                        <p class="text-gray-600">Les 10 finalistes bénéficieront d'un programme de renforcement: ateliers de pitch, personal branding, business model.</p>
-                    </div>
-                </div>
-
-                <div class="relative md:flex md:items-center md:justify-between w-full flex-row-reverse" data-aos="fade-up" data-aos-delay="400">
-                    <div class="hidden md:block md:w-5/12"></div>
-                    <div class="absolute left-[-41px] md:left-1/2 w-6 h-6 rounded-full bg-white border-4 border-[#009fe3] transform md:-translate-x-1/2 flex items-center justify-center z-10 shadow-lg"></div>
-                    <div class="bg-white rounded-2xl shadow-lg p-6 md:w-5/12 hover:shadow-xl hover:-translate-y-2 transition duration-300 border-r-4 border-l-4 md:border-l-0 border-[#009fe3]">
-                        <h3 class="text-xl font-extrabold text-[#009fe3] mb-2">26 JUILLET</h3>
-                        <h4 class="text-lg font-bold text-gray-800 mb-2">JOURNÉE DE PITCH - FINALE</h4>
-                        <p class="text-gray-600">Présentation devant un jury de haut niveau + public.</p>
+                    <div class="glass-card secondary-card card-2 scale-in delay-1">
+                        <i class="fas fa-hands-helping"></i>
+                        <h4>Solidaire</h4>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Les Prix et Opportunités Section -->
-        <section id="prix" class="mb-20" data-aos="fade-up">
-            <h2 class="text-3xl md:text-5xl font-extrabold text-[#009640] mb-12 text-center uppercase tracking-wider relative">
-                Les Prix et Opportunités
-                <span class="block w-24 h-1 bg-[#009fe3] mx-auto mt-4 rounded-full"></span>
-            </h2>
-            <div class="bg-gradient-to-br from-white to-[#f0f4f8] rounded-3xl shadow-xl p-8 md:p-12 text-center border border-gray-100 max-w-5xl mx-auto">
-                <div class="bg-[#e6f7ff] rounded-2xl p-6 mb-8 shadow-inner border border-[#009fe3]/20">
-                    <p class="text-xl font-medium text-gray-800">Tous les participants recevront une attestation officielle ainsi que la promotion de leurs projets sur notre plateforme.</p>
+            <!-- Vision Block -->
+            <div class="text-center mt-4 fade-in-up" style="margin-top: 5rem;">
+                <div class="glass-card" style="max-width: 800px; margin: 0 auto; padding: 3rem; border-color: rgba(0, 159, 227, 0.3);">
+                    <i class="fas fa-eye" style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 1rem;"></i>
+                    <h3 style="font-size: 1.3rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 1rem;">Notre Vision</h3>
+                    <p style="font-size: 1.4rem; font-weight: 600; font-style: italic; color: var(--text-main);">
+                        « Éveillés pour réveiller une génération de jeunes africains acteur de sa propre transformation »
+                    </p>
                 </div>
-                <p class="text-xl text-gray-700 leading-relaxed mb-8">
-                    <strong class="text-[#009640]">Des récompenses exceptionnelles attendent les meilleurs participants !</strong><br>
-                    Donnez le meilleur de vous-même pour tenter de remporter un prestigieux prix.
-                </p>
-                 <div class="mt-8 flex justify-center group">
-                    <img src="image2.jpg" alt="Image du trophée" class="rounded-2xl shadow-2xl w-full max-w-2xl object-cover transform group-hover:scale-[1.02] transition duration-500 border-4 border-white">
-                </div>
-            </div>
-        </section>
-
-        <!-- Contacts Section -->
-        <section id="contact" class="mb-20" data-aos="fade-up">
-            <h2 class="text-3xl md:text-5xl font-extrabold text-[#009640] mb-12 text-center uppercase tracking-wider relative">
-                Contacts
-                <span class="block w-24 h-1 bg-[#009fe3] mx-auto mt-4 rounded-full"></span>
-            </h2>
-            <div class="bg-gradient-to-r from-[#009640] to-[#009fe3] rounded-3xl shadow-2xl p-8 md:p-14 text-center text-white max-w-5xl mx-auto transform hover:-translate-y-2 transition duration-500">
-                <h3 class="text-3xl font-bold mb-8 drop-shadow-md">N'hésitez pas à nous contacter pour toute question !</h3>
-                <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-12 mb-10">
-                    <div class="flex items-center space-x-4 bg-white/10 p-4 rounded-2xl backdrop-blur-sm border border-white/20 hover:bg-white/20 transition">
-                        <img src="telephone.png" alt="Phone Icon" class="w-8 h-8 filter brightness-0 invert">
-                        <span class="text-xl font-semibold">+212 0612843918</span>
-                    </div>
-                    <div class="flex items-center space-x-4 bg-white/10 p-4 rounded-2xl backdrop-blur-sm border border-white/20 hover:bg-white/20 transition">
-                        <img src="email.png" alt="Email Icon" class="w-8 h-8 filter brightness-0 invert">
-                        <a href="mailto:agrowthtogether@gmail.com" class="text-xl font-semibold hover:underline">agrowthtogether@gmail.com</a>
-                    </div>
-                </div>
-                <p class="text-xl font-medium mb-10">Suivez-nous sur les réseaux sociaux : <span class="font-bold text-yellow-300 tracking-wider">#AGROWTHTOGETHER</span></p>
-                <a href="https://forms.gle/dyiT5kdCFSNvesca9" target="_blank" class="bg-white text-[#009640] hover:bg-yellow-300 hover:text-gray-900 font-extrabold py-5 px-12 rounded-full text-xl shadow-[0_0_20px_rgba(255,255,255,0.4)] hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] transform hover:scale-105 transition-all duration-300 inline-block uppercase tracking-wider">
-                    OSEZ POSTULER DÈS MAINTENANT !
-                </a>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Map Section -->
-    <section id="map" class="w-full" data-aos="fade-in">
-        <div class="relative h-[500px] w-full shadow-inner">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.6749820413615!2d-7.664706389053313!3d33.56181994335621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d291864d93bd%3A0x63dd00dfbd2094a9!2sESCA%20Ecole%20de%20Management!5e0!3m2!1sfr!2sfr!4v1752438031872!5m2!1sfr!2sfr" class="absolute top-0 left-0 w-full h-full border-0 grayscale hover:grayscale-0 transition duration-700" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="absolute top-8 left-1/2 transform -translate-x-1/2 bg-white/90 backdrop-blur-md px-8 py-4 rounded-full shadow-lg border border-gray-200 pointer-events-none">
-                <h2 class="text-2xl font-bold text-[#009640] uppercase tracking-widest">LIEU DU FORUM</h2>
             </div>
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-gray-300 text-center py-10 mt-0">
-        <div class="container mx-auto px-4">
-            <img src="logo GT  sans grothw.png" alt="Growth Together Logo" class="mx-auto mb-6 rounded-full w-16 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300">
-            <p class="text-lg">&copy; 2025 Growth Together. Tous droits réservés.</p>
+    <!-- Objectifs Section -->
+    <section class="section bg-dark" id="objectifs">
+        <div class="container">
+            <div class="section-header text-center fade-in">
+                <h2 class="section-title">Nos <span class="accent">Objectifs</span></h2>
+                <p class="section-subtitle">Six piliers fondamentaux qui guident chacune de nos actions et initiatives.</p>
+            </div>
+
+            <div class="objectives-grid">
+                <div class="glass-card objective-card scale-in">
+                    <div class="icon-circle"><i class="fas fa-bullhorn"></i></div>
+                    <h3>Information & Accès</h3>
+                    <p>Être un canal d'information sur les opportunités et les bourses pour ceux à qui elles ne sont pas toujours accessibles.</p>
+                </div>
+
+                <div class="glass-card objective-card scale-in delay-1">
+                    <div class="icon-circle"><i class="fas fa-award"></i></div>
+                    <h3>Excellence & Initiative</h3>
+                    <p>Encourager l'excellence, la prise d'initiative et l'entrepreneuriat au sein de la jeunesse africaine.</p>
+                </div>
+
+                <div class="glass-card objective-card scale-in delay-2">
+                    <div class="icon-circle"><i class="fas fa-cogs"></i></div>
+                    <h3>Compétences</h3>
+                    <p>Aider au développement des compétences clés : communication, leadership, réseautage et langues.</p>
+                </div>
+
+                <div class="glass-card objective-card scale-in">
+                    <div class="icon-circle"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Apprentissage</h3>
+                    <p>Former sur les techniques d'apprentissage efficaces pour les élèves et étudiants.</p>
+                </div>
+
+                <div class="glass-card objective-card scale-in delay-1">
+                    <div class="icon-circle"><i class="fas fa-brain"></i></div>
+                    <h3>Développement Personnel</h3>
+                    <p>Travailler sur la confiance en soi, la prise de parole en public, l'autodiscipline et la découverte des talents.</p>
+                </div>
+
+                <div class="glass-card objective-card scale-in delay-2">
+                    <div class="icon-circle"><i class="fas fa-heart"></i></div>
+                    <h3>Bien-être & Prévention</h3>
+                    <p>Lutter contre la dépression et promouvoir le bien-être mental chez les jeunes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activités Section -->
+    <section class="section" id="activites">
+        <div class="container">
+            <div class="section-header text-center fade-in">
+                <h2 class="section-title">Nos <span class="accent">Activités</span></h2>
+                <p class="section-subtitle">Des initiatives concrètes pour accompagner la jeunesse africaine dans son développement.</p>
+            </div>
+
+            <div class="activities-row">
+                <div class="glass-card activity-item scale-in">
+                    <div class="icon-circle"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3>Formations</h3>
+                    <p>Ateliers pratiques et sessions de formation pour renforcer les compétences professionnelles et personnelles.</p>
+                </div>
+
+                <div class="glass-card activity-item scale-in delay-1">
+                    <div class="icon-circle"><i class="fas fa-comments"></i></div>
+                    <h3>Forums</h3>
+                    <p>Événements majeurs réunissant entrepreneurs, investisseurs et jeunes porteurs de projets innovants.</p>
+                </div>
+
+                <div class="glass-card activity-item scale-in delay-2">
+                    <div class="icon-circle"><i class="fas fa-laptop"></i></div>
+                    <h3>Webinaires</h3>
+                    <p>Sessions en ligne accessibles à tous pour démocratiser l'accès à l'information et aux opportunités.</p>
+                </div>
+
+                <div class="glass-card activity-item scale-in delay-3">
+                    <div class="icon-circle"><i class="fas fa-share-alt"></i></div>
+                    <h3>Réseautage</h3>
+                    <p>Mise en relation avec des professionnels, mentors et partenaires à travers l'Afrique et au-delà.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forum Highlight Banner -->
+    <section class="forum-banner" id="forum">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="container text-center" style="position: relative; z-index: 10;">
+            <div class="badge fade-in-up">Événement à la une</div>
+            <h2 class="fade-in-up delay-1">Forum 2026 : <span class="accent">Oser pour le changement</span></h2>
+            <p class="fade-in-up delay-2">La 2ème édition du grand forum sur l'entrepreneuriat et l'investissement. Une journée pour inspirer, former et connecter la jeunesse africaine.</p>
+
+            <div class="forum-banner-meta fade-in-up delay-3">
+                <span class="meta-tag"><i class="fas fa-calendar-alt"></i> 27 Juin 2026</span>
+                <span class="meta-tag"><i class="fas fa-clock"></i> 10h00 – 17h00</span>
+                <span class="meta-tag"><i class="fas fa-map-marker-alt"></i> ESCA, Casablanca</span>
+            </div>
+
+            <div class="fade-in-up delay-4">
+                <a href="forum/index.html" class="btn btn-primary btn-large">Découvrir le Forum <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section bg-dark" id="contact">
+        <div class="container">
+            <div class="section-header text-center fade-in">
+                <h2 class="section-title">Nous <span class="accent">Contacter</span></h2>
+                <p class="section-subtitle">Une question ? Un partenariat ? Une idée ? N'hésitez pas à nous écrire.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info slide-in-left">
+                    <h3>Restons en contact</h3>
+                    <p>Growth Together est toujours ouverte aux collaborations, partenariats et nouvelles idées. Que vous soyez étudiant, entrepreneur, investisseur ou simplement curieux, nous serions ravis d'échanger avec vous.</p>
+
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>agrowthtogether@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+212 0612843918</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Casablanca, Maroc</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links mt-4">
+                        <a href="https://www.linkedin.com/company/agrowthtogether/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/growth_together.a?igsh=MTdxMjJ1Mjh3dGt5Yg==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/1Bh3CekVWM/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-card slide-in-right">
+                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="contact">
+                        <p class="hidden" style="display:none;">
+                            <label>Ne remplissez pas ce champ : <input name="bot-field"></label>
+                        </p>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nom complet</label>
+                                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" name="subject" placeholder="L'objet de votre message" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Envoyer <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section">
+        <div class="container text-center fade-in-up">
+            <h2 class="section-title">Nous <span class="accent">Trouver</span></h2>
+            <p class="section-subtitle">Notre siège est basé à Casablanca, avec des antennes prévues dans tout le continent africain.</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.7745772635904!2d-7.634123523497262!3d33.58521744224095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d296cd8cb487%3A0xcbaecfc38d977da0!2sESCA%20Ecole%20de%20Management!5e0!3m2!1sfr!2sma!4v1714000000000!5m2!1sfr!2sma" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="Growth Together" class="footer-logo">
+                <p>Éveillés pour réveiller une génération de jeunes africains acteur de sa propre transformation.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#about">À Propos</a></li>
+                    <li><a href="#objectifs">Objectifs</a></li>
+                    <li><a href="#activites">Activités</a></li>
+                    <li><a href="forum/index.html">Forum 2026</a></li>
+                    <li><a href="pages/mentions-legales.html">Mentions Légales</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> agrowthtogether@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +212 0612843918</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/agrowthtogether/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/growth_together.a?igsh=MTdxMjJ1Mjh3dGt5Yg==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1Bh3CekVWM/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <p class="mt-2 tag">#agrowthtogether</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Growth Together. Tous droits réservés. | <a href="pages/mentions-legales.html">Mentions Légales</a></p>
         </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800,
-            once: true,
-        });
-    </script>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
 </html>
