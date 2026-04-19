@@ -45,8 +45,19 @@ document.addEventListener('DOMContentLoaded', () => {
             alt: img.alt
         });
 
+        item.setAttribute('role', 'button');
+        item.setAttribute('tabindex', '0');
+        item.setAttribute('aria-label', `Ouvrir l'image : ${img.alt}`);
+
         item.addEventListener('click', () => {
             openLightbox(index);
+        });
+
+        item.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                openLightbox(index);
+            }
         });
     });
 

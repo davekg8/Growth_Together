@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forum Growth Together 2026 | Oser pour le changement</title>
-    <meta name="description" content="Participez à la 2ème édition du Forum sur l'entrepreneuriat et l'investissement organisé par Growth Together. 27 Juin 2026 à l'ESCA, Casablanca.">
+    <meta name="description"
+        content="Participez à la 2ème édition du Forum sur l'entrepreneuriat et l'investissement organisé par Growth Together. 27 Juin 2026 à l'ESCA, Casablanca.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -17,7 +21,9 @@
     <!-- Shared CSS + Forum-specific CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="css/forum.css">
+    <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('gt-theme') || 'dark');</script>
 </head>
+
 <body>
     <!-- Navbar -->
     <nav id="navbar" class="navbar">
@@ -26,17 +32,19 @@
                 <img src="../assets/logo.png" alt="Growth Together Logo" class="logo">
                 <span class="logo-text">Growth Together</span>
             </a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links-menu">
                 <li><a href="../index.html">Accueil</a></li>
                 <li><a href="#about">À Propos</a></li>
                 <li><a href="#activities">Activités</a></li>
                 <li><a href="#schedule">Programme</a></li>
                 <li><a href="#galerie">Galerie</a></li>
             </ul>
-            <a href="https://forms.gle/6y5sB6aUipFnjRtE7" target="_blank" class="btn btn-outline" id="nav-cta">S'inscrire</a>
-            <div class="hamburger">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSffjEo6CpLZPQrxN1Nc00LuAe-3oYAaK39nSExLU6ISub8bSg/viewform"
+                target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="nav-cta">S'inscrire</a>
+            <button class="hamburger" id="hamburger" type="button" aria-label="Ouvrir le menu"
+                aria-controls="nav-links-menu">
                 <i class="fas fa-bars"></i>
-            </div>
+            </button>
         </div>
     </nav>
 
@@ -47,9 +55,10 @@
             <div class="glow glow-2"></div>
         </div>
         <div class="container hero-content">
-            <div class="badge fade-in-up">2ème Édition</div>
+            <div class="badge badge-orange fade-in-up">2ème Édition</div>
             <h1 class="hero-title fade-in-up delay-1">Oser pour le <span class="accent">changement</span></h1>
-            <p class="hero-subtitle fade-in-up delay-2">Le grand forum de l'entrepreneuriat et de l'investissement. Stimuler l'innovation et la création de valeur chez les jeunes.</p>
+            <p class="hero-subtitle fade-in-up delay-2">Le grand forum de l'entrepreneuriat et de l'investissement.
+                Stimuler l'innovation et la création de valeur chez les jeunes.</p>
 
             <div class="event-meta fade-in-up delay-3">
                 <div class="meta-item">
@@ -76,7 +85,9 @@
             </div>
 
             <div class="hero-cta fade-in-up delay-4">
-                <a href="https://forms.gle/6y5sB6aUipFnjRtE7" target="_blank" class="btn btn-primary btn-large">Réserver ma place <i class="fas fa-arrow-right"></i></a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSffjEo6CpLZPQrxN1Nc00LuAe-3oYAaK39nSExLU6ISub8bSg/viewform"
+                    target="_blank" rel="noopener noreferrer" class="btn btn-orange btn-large">Réserver ma place <i
+                        class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </header>
@@ -87,8 +98,11 @@
             <div class="about-grid">
                 <div class="about-text slide-in-left">
                     <h2 class="section-title">Stimuler l'esprit <span class="accent">entrepreneurial</span></h2>
-                    <p>Le Forum s'adresse à une jeunesse passionnée par la création de valeur, composée d'étudiants porteurs de projets, de jeunes entrepreneurs et de jeunes professionnels en quête de sens.</p>
-                    <p>Notre objectif : vous offrir un cadre propice à l'apprentissage, au réseautage et à l'expression de votre potentiel à travers une journée riche en opportunités concrètes de financement et de collaboration.</p>
+                    <p>Le Forum s'adresse à une jeunesse passionnée par la création de valeur, composée d'étudiants
+                        porteurs de projets, de jeunes entrepreneurs et de jeunes professionnels en quête de sens.</p>
+                    <p>Notre objectif : vous offrir un cadre propice à l'apprentissage, au réseautage et à l'expression
+                        de votre potentiel à travers une journée riche en opportunités concrètes de financement et de
+                        collaboration.</p>
 
                     <ul class="feature-list">
                         <li><i class="fas fa-check-circle"></i> Partage d'expériences</li>
@@ -120,7 +134,8 @@
         <div class="container">
             <div class="section-header text-center fade-in">
                 <h2 class="section-title">Au cœur du <span class="accent">Forum</span></h2>
-                <p class="section-subtitle">Découvrez les temps forts de cette journée exceptionnelle conçue pour vous propulser.</p>
+                <p class="section-subtitle">Découvrez les temps forts de cette journée exceptionnelle conçue pour vous
+                    propulser.</p>
             </div>
 
             <div class="scrolly-layout">
@@ -137,7 +152,8 @@
                     <div class="scrolly-step active" data-step="0">
                         <div class="activity-card">
                             <h3>Panel d'inspiration</h3>
-                            <p>Des entrepreneurs et investisseurs partagent leurs parcours, réussites et leçons apprises pour vous aider à surmonter les défis de l'entrepreneuriat.</p>
+                            <p>Des entrepreneurs et investisseurs partagent leurs parcours, réussites et leçons apprises
+                                pour vous aider à surmonter les défis de l'entrepreneuriat.</p>
                             <span class="speaker-tag">Intervenants à définir</span>
                         </div>
                     </div>
@@ -145,21 +161,24 @@
                     <div class="scrolly-step" data-step="1">
                         <div class="activity-card">
                             <h3>Ateliers pratiques</h3>
-                            <p>Des sessions interactives en petits groupes (Business Model, Pitch, Financement) animées par des experts pour renforcer vos compétences.</p>
+                            <p>Des sessions interactives en petits groupes (Business Model, Pitch, Financement) animées
+                                par des experts pour renforcer vos compétences.</p>
                         </div>
                     </div>
 
                     <div class="scrolly-step" data-step="2">
                         <div class="activity-card">
                             <h3>Pitch de projets</h3>
-                            <p>Présentez vos idées devant un jury d'experts. L'occasion idéale de valoriser votre initiative et d'identifier un soutien potentiel pour votre projet.</p>
+                            <p>Présentez vos idées devant un jury d'experts. L'occasion idéale de valoriser votre
+                                initiative et d'identifier un soutien potentiel pour votre projet.</p>
                         </div>
                     </div>
 
                     <div class="scrolly-step" data-step="3">
                         <div class="activity-card">
                             <h3>Réseautage structuré</h3>
-                            <p>Des connexions utiles et durables facilitées par des dynamiques guidées par centres d'intérêt.</p>
+                            <p>Des connexions utiles et durables facilitées par des dynamiques guidées par centres
+                                d'intérêt.</p>
                         </div>
                     </div>
                 </div>
@@ -249,7 +268,10 @@
             <h2 class="section-title">Lieu de <span class="accent">l'événement</span></h2>
             <p class="section-subtitle">Rejoignez-nous à l'ESCA École de Management, Casablanca.</p>
             <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.7745772635904!2d-7.634123523497262!3d33.58521744224095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d296cd8cb487%3A0xcbaecfc38d977da0!2sESCA%20Ecole%20de%20Management!5e0!3m2!1sfr!2sma!4v1714000000000!5m2!1sfr!2sma" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.7745772635904!2d-7.634123523497262!3d33.58521744224095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d296cd8cb487%3A0xcbaecfc38d977da0!2sESCA%20Ecole%20de%20Management!5e0!3m2!1sfr!2sma!4v1714000000000!5m2!1sfr!2sma"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -259,66 +281,77 @@
         <div class="container">
             <div class="section-header text-center fade-in">
                 <h2 class="section-title">Retour en <span class="accent">Images</span></h2>
-                <p class="section-subtitle">Revivez les moments forts de la 1ère édition du Forum Growth Together, tenue à l'ESCA Casablanca.</p>
+                <p class="section-subtitle">Revivez les moments forts de la 1ère édition du Forum Growth Together, tenue
+                    à l'ESCA Casablanca.</p>
             </div>
 
             <div class="gallery-grid">
                 <div class="gallery-item fade-in-up" data-index="0">
-                    <img src="../assets/photos/forum/IMG_0652.jpg" alt="Photo de groupe – Tous les participants du Forum Growth Together" loading="lazy">
+                    <img src="../assets/photos/forum/IMG_0652.jpg"
+                        alt="Photo de groupe – Tous les participants du Forum Growth Together" loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fas fa-expand"></i>
                     </div>
                 </div>
                 <div class="gallery-item fade-in-up delay-1" data-index="1">
-                    <img src="../assets/photos/forum/IMG_0234.jpg" alt="Intervention d'une experte au pupitre ESCA" loading="lazy">
+                    <img src="../assets/photos/forum/IMG_0234.jpg" alt="Intervention d'une experte au pupitre ESCA"
+                        loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fas fa-expand"></i>
                     </div>
                 </div>
                 <div class="gallery-item fade-in-up delay-2" data-index="2">
-                    <img src="../assets/photos/forum/IMG_0280.jpg" alt="Les participants du forum suivant une conférence" loading="lazy">
+                    <img src="../assets/photos/forum/IMG_0280.jpg"
+                        alt="Les participants du forum suivant une conférence" loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fas fa-expand"></i>
                     </div>
                 </div>
                 <div class="gallery-item fade-in-up" data-index="3">
-                    <img src="../assets/photos/forum/IMG_0385.jpg" alt="Échanges entre intervenants lors du panel" loading="lazy">
+                    <img src="../assets/photos/forum/IMG_0385.jpg" alt="Échanges entre intervenants lors du panel"
+                        loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fas fa-expand"></i>
                     </div>
                 </div>
                 <div class="gallery-item fade-in-up delay-1" data-index="4">
-                    <img src="../assets/photos/forum/IMG_0203.jpg" alt="Réseautage – Participant lors de la pause-café" loading="lazy">
+                    <img src="../assets/photos/forum/IMG_0203.jpg" alt="Réseautage – Participant lors de la pause-café"
+                        loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fas fa-expand"></i>
                     </div>
                 </div>
                 <div class="gallery-item fade-in-up delay-2" data-index="5">
-                    <img src="../assets/photos/forum/IMG_0223.jpg" alt="Session de questions-réponses avec les panélistes" loading="lazy">
+                    <img src="../assets/photos/forum/IMG_0223.jpg"
+                        alt="Session de questions-réponses avec les panélistes" loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fas fa-expand"></i>
                     </div>
                 </div>
                 <div class="gallery-item fade-in-up" data-index="6">
-                    <img src="../assets/photos/forum/IMG_0259.jpg" alt="Vue d'ensemble de l'amphithéâtre ESCA pendant le forum" loading="lazy">
+                    <img src="../assets/photos/forum/IMG_0259.jpg"
+                        alt="Vue d'ensemble de l'amphithéâtre ESCA pendant le forum" loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fas fa-expand"></i>
                     </div>
                 </div>
                 <div class="gallery-item fade-in-up delay-1" data-index="7">
-                    <img src="../assets/photos/forum/IMG_0447.jpg" alt="Atelier pratique avec les participants" loading="lazy">
+                    <img src="../assets/photos/forum/IMG_0447.jpg" alt="Atelier pratique avec les participants"
+                        loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fas fa-expand"></i>
                     </div>
                 </div>
                 <div class="gallery-item fade-in-up delay-2" data-index="8">
-                    <img src="../assets/photos/forum/IMG_0464.jpg" alt="Moment de partage entre les jeunes entrepreneurs" loading="lazy">
+                    <img src="../assets/photos/forum/IMG_0464.jpg"
+                        alt="Moment de partage entre les jeunes entrepreneurs" loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fas fa-expand"></i>
                     </div>
                 </div>
                 <div class="gallery-item fade-in-up" data-index="9">
-                    <img src="../assets/photos/forum/IMG_0471.jpg" alt="Photo souvenir avec les intervenants" loading="lazy">
+                    <img src="../assets/photos/forum/IMG_0471.jpg" alt="Photo souvenir avec les intervenants"
+                        loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fas fa-expand"></i>
                     </div>
@@ -336,8 +369,10 @@
     <!-- Lightbox -->
     <div class="lightbox" id="lightbox">
         <button class="lightbox-close" id="lightbox-close" aria-label="Fermer"><i class="fas fa-times"></i></button>
-        <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Précédente"><i class="fas fa-chevron-left"></i></button>
-        <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Suivante"><i class="fas fa-chevron-right"></i></button>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Précédente"><i
+                class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Suivante"><i
+                class="fas fa-chevron-right"></i></button>
         <div class="lightbox-content">
             <img src="" alt="" id="lightbox-img">
             <p class="lightbox-caption" id="lightbox-caption"></p>
@@ -348,9 +383,11 @@
     <!-- CTA / Register Section -->
     <section class="cta-section" id="register">
         <div class="container text-center fade-in-up">
-            <h2>Prêt à façonner <span class="accent">l'avenir</span> ?</h2>
+            <h2>Prêt à façonner <span class="accent-orange">l'avenir</span> ?</h2>
             <p>Ne manquez pas l'événement incontournable de l'année pour les jeunes entrepreneurs.</p>
-            <a href="https://forms.gle/6y5sB6aUipFnjRtE7" target="_blank" class="btn btn-primary btn-large mt-4">Je réserve ma place <i class="fas fa-ticket-alt"></i></a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSffjEo6CpLZPQrxN1Nc00LuAe-3oYAaK39nSExLU6ISub8bSg/viewform"
+                target="_blank" rel="noopener noreferrer" class="btn btn-orange btn-large mt-4">Je réserve ma place <i
+                    class="fas fa-ticket-alt"></i></a>
         </div>
     </section>
 
@@ -376,20 +413,31 @@
                 <p><i class="fas fa-envelope"></i> agrowthtogether@gmail.com</p>
                 <p><i class="fas fa-phone"></i> +212 0612843918</p>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/company/agrowthtogether/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://www.instagram.com/growth_together.a?igsh=MTdxMjJ1Mjh3dGt5Yg==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/share/1Bh3CekVWM/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/company/agrowthtogether/" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/growth_together.a?igsh=MTdxMjJ1Mjh3dGt5Yg==" target="_blank"
+                        rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1Bh3CekVWM/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                 </div>
                 <p class="mt-2 tag">#agrowthtogether</p>
             </div>
         </div>
         <div class="footer-bottom text-center">
-            <p>&copy; 2026 Growth Together. Tous droits réservés. | <a href="../pages/mentions-legales.html">Mentions Légales</a></p>
+            <p>&copy; 2026 Growth Together. Tous droits réservés. | <a href="../pages/mentions-legales.html">Mentions
+                    Légales</a></p>
         </div>
     </footer>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Changer de thème">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+    </button>
 
     <!-- Scripts: Shared + Forum-specific -->
     <script src="../js/main.js"></script>
     <script src="js/forum.js"></script>
 </body>
+
 </html>

@@ -37,6 +37,7 @@
 .meta-value {
     font-weight: 600;
     font-size: 1rem;
+    color: var(--text-main);
 }
 
 /* Scrollytelling Layout */
@@ -122,6 +123,10 @@
     color: var(--primary);
 }
 
+[data-theme="light"] .activity-card h3 {
+    color: var(--primary-dark);
+}
+
 .activity-card p {
     color: var(--text-muted);
     font-size: 1.05rem;
@@ -132,7 +137,8 @@
     display: inline-block;
     font-size: 0.8rem;
     padding: 0.3rem 0.8rem;
-    background: rgba(255,255,255,0.05);
+    background: rgba(0, 150, 64, 0.08);
+    border: 1px solid rgba(0, 150, 64, 0.2);
     border-radius: 20px;
     color: var(--text-muted);
 }
@@ -178,6 +184,10 @@
     z-index: 2;
 }
 
+[data-theme="light"] .timeline-item::before {
+    background: var(--bg-dark);
+}
+
 .timeline-time {
     font-weight: 700;
     color: var(--primary);
@@ -195,7 +205,18 @@
 
 .timeline-content:hover {
     border-color: rgba(0, 150, 64, 0.3);
+}
+
+[data-theme="dark"] .timeline-content:hover {
     background: rgba(255,255,255,0.05);
+}
+
+[data-theme="light"] .timeline-content:hover {
+    background: rgba(0, 150, 64, 0.04);
+}
+
+.timeline-content h4 {
+    color: var(--text-main);
 }
 
 .timeline-content p {
@@ -207,12 +228,29 @@
 /* CTA Section */
 .cta-section {
     padding: 8rem 0;
-    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" opacity="0.05"><rect width="100" height="100" fill="none" stroke="%23ffffff" stroke-width="1"/></svg>');
     position: relative;
+    overflow: hidden;
+}
+
+[data-theme="dark"] .cta-section {
+    background: linear-gradient(
+        135deg,
+        rgba(0, 150, 64, 0.08),
+        rgba(0, 159, 227, 0.08)
+    );
+}
+
+[data-theme="light"] .cta-section {
+    background: linear-gradient(
+        135deg,
+        rgba(0, 150, 64, 0.06),
+        rgba(0, 159, 227, 0.06)
+    );
 }
 
 .cta-section h2 {
-    font-size: 3rem;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--text-main);
 }
 
 .cta-section p {
@@ -220,6 +258,11 @@
     color: var(--text-muted);
     max-width: 600px;
     margin: 0 auto;
+}
+
+/* Forum Hero overrides — keep the abstract glow style */
+.forum-page .hero-bg {
+    background: radial-gradient(circle at center, var(--bg-dark), var(--bg-darker));
 }
 
 /* Forum Responsive */
@@ -276,6 +319,11 @@
     border-color: rgba(0, 150, 64, 0.5);
     transform: translateY(-4px);
     box-shadow: 0 12px 40px rgba(0, 150, 64, 0.15);
+}
+
+.gallery-item:focus-visible {
+    outline: 3px solid rgba(0, 159, 227, 0.5);
+    outline-offset: 3px;
 }
 
 .gallery-item img {
@@ -371,7 +419,7 @@
 }
 
 .lightbox-caption {
-    color: var(--text-muted);
+    color: #94a3b8;
     font-size: 0.95rem;
     margin-top: 1rem;
     text-align: center;
@@ -434,7 +482,7 @@
     bottom: 1.5rem;
     left: 50%;
     transform: translateX(-50%);
-    color: var(--text-muted);
+    color: #94a3b8;
     font-size: 0.85rem;
     font-weight: 500;
     letter-spacing: 2px;
@@ -473,3 +521,115 @@
     }
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .scrolly-icon.active {
+        animation: none;
+    }
+
+    .gallery-item,
+    .gallery-item img,
+    .gallery-overlay,
+    .lightbox,
+    .lightbox-content img,
+    .lightbox-close,
+    .lightbox-nav {
+        transition: none !important;
+    }
+}
+
+/* ==== FORUM LIGHT THEME OVERRIDES ==== */
+
+[data-theme="light"] .hero-bg {
+    background: linear-gradient(135deg, #e8f5e9, #e3f2fd);
+}
+
+[data-theme="light"] .activity-card {
+    background: #fff;
+    border-color: rgba(0, 150, 64, 0.15);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .activity-card h3 {
+    color: var(--primary-dark);
+}
+
+[data-theme="light"] .speaker-tag {
+    background: rgba(0, 150, 64, 0.06);
+    border-color: rgba(0, 150, 64, 0.15);
+}
+
+[data-theme="light"] .scrolly-icon {
+    background: rgba(0, 150, 64, 0.08);
+    border-color: rgba(0, 150, 64, 0.2);
+}
+
+[data-theme="light"] .timeline-item::before {
+    background: #fff;
+}
+
+[data-theme="light"] .timeline-content {
+    background: #fff;
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .timeline-content:hover {
+    background: rgba(0, 150, 64, 0.03);
+    border-color: rgba(0, 150, 64, 0.2);
+}
+
+[data-theme="light"] .timeline-content h4 {
+    color: #1a2332;
+}
+
+[data-theme="light"] .cta-section {
+    background: linear-gradient(135deg, rgba(0,150,64,0.05), rgba(0,159,227,0.05));
+}
+
+[data-theme="light"] .cta-section h2 {
+    color: #1a2332;
+}
+
+[data-theme="light"] .meta-value {
+    color: #1a2332;
+}
+
+/* ==== FORUM HERO LIGHT MODE FIX ==== */
+/* Forum hero uses gradient bg, not photo, so text must be dark in light mode */
+[data-theme="light"] .hero h1 {
+    color: #1a2332;
+}
+
+[data-theme="light"] .hero-subtitle {
+    color: #5a6a7a;
+}
+
+[data-theme="light"] .hero .badge {
+    color: var(--primary-dark);
+}
+
+/* Forum navbar — the hero is light so navbar text must be dark */
+[data-theme="light"] .navbar:not(.scrolled) .nav-links a {
+    color: #1a2332;
+}
+[data-theme="light"] .navbar:not(.scrolled) .logo-text {
+    color: #1a2332;
+}
+[data-theme="light"] .navbar:not(.scrolled) .hamburger {
+    color: #1a2332;
+}
+[data-theme="light"] .navbar:not(.scrolled) .btn-outline {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+[data-theme="light"] .navbar:not(.scrolled) .btn-outline:hover {
+    background: var(--primary);
+    color: #fff;
+}
+
+/* Event meta card in light mode */
+[data-theme="light"] .event-meta {
+    background: #fff;
+    border-color: rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    backdrop-filter: none;
+}

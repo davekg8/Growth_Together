@@ -1,6 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // Navbar scroll effect
+    // ==== THEME TOGGLE ====
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlEl = document.documentElement;
+
+    // Load saved theme or default to dark
+    const savedTheme = localStorage.getItem('gt-theme') || 'dark';
+    htmlEl.setAttribute('data-theme', savedTheme);
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const current = htmlEl.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            htmlEl.setAttribute('data-theme', next);
+            localStorage.setItem('gt-theme', next);
+        });
+    }
+
+    // ==== NAVBAR SCROLL ====
     const navbar = document.getElementById('navbar');
     if (navbar) {
         window.addEventListener('scroll', () => {
@@ -12,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Mobile Menu Toggle
+    // ==== MOBILE MENU ====
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     const navCta = document.getElementById('nav-cta');
@@ -65,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Intersection Observer for scroll animations
+    // ==== SCROLL ANIMATIONS ====
     const observerOptions = {
         root: null,
         rootMargin: '0px',
