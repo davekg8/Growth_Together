@@ -43,6 +43,7 @@
 /* Scrollytelling Layout */
 .scrolly-layout {
     display: flex;
+    align-items: flex-start;
     gap: 4rem;
     position: relative;
     margin-top: 4rem;
@@ -84,13 +85,13 @@
 }
 
 @keyframes pulseIcon {
-    0% { box-shadow: 0 0 20px rgba(0, 150, 64, 0.2); transform: scale(1); }
-    100% { box-shadow: 0 0 50px rgba(0, 150, 64, 0.5); transform: scale(1.05); }
+    0% { box-shadow: 0 0 20px rgba(0, 150, 64, 0.2); }
+    100% { box-shadow: 0 0 50px rgba(0, 150, 64, 0.5); }
 }
 
 .scrolly-steps-container {
     flex: 1;
-    padding-bottom: 30vh;
+    padding-bottom: 50vh;
 }
 
 .scrolly-step {
@@ -274,23 +275,19 @@
 
     .scrolly-layout {
         flex-direction: column;
+        gap: 2rem;
     }
 
     .scrolly-visual-container {
-        position: relative;
-        top: auto;
-        height: 150px;
-    }
-
-    .scrolly-icon {
-        width: 120px;
-        height: 120px;
-        font-size: 3rem;
+        display: none; /* Hide visual container on mobile */
     }
 
     .scrolly-step {
         min-height: auto;
-        padding: 2rem 0;
+        padding: 1.5rem 0;
+        opacity: 1 !important; /* Always fully visible on mobile */
+        transform: none !important; /* No horizontal shift on mobile */
+        transition: none;
     }
 
     .scrolly-steps-container {
