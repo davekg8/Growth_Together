@@ -961,6 +961,10 @@ h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
     transition: var(--transition);
 }
 
+.social-links a i {
+    width: auto;
+}
+
 .social-links a:hover {
     background: var(--primary);
     border-color: var(--primary);
@@ -1328,3 +1332,162 @@ h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
 }
 
 [data-theme="light"] .scroll-indicator { color: rgba(255,255,255,0.6); }
+
+/* ========== DIRECTION & FONDATEURS (SHARED FROM MEMBRES) ========== */
+.fondateurs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.fondateur-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    padding: 2.5rem !important;
+    overflow: hidden;
+}
+
+/* Reversed layout (photo left, text right) */
+.fondateur-card--reversed {
+    direction: rtl;
+}
+
+.fondateur-card--reversed > * {
+    direction: ltr;
+}
+
+/* Text side */
+.fondateur-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.fondateur-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: fit-content;
+    padding: 0.4rem 1rem;
+    background: rgba(0, 150, 64, 0.1);
+    border: 1px solid rgba(0, 150, 64, 0.25);
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--primary-light);
+    margin-bottom: 1.2rem;
+}
+
+.fondateur-badge i {
+    font-size: 0.7rem;
+}
+
+.fondateur-text h3 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
+    line-height: 1.2;
+}
+
+.fondateur-role {
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--primary-light);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+}
+
+.fondateur-text p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* Photo side */
+.fondateur-photo {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    max-width: 320px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.fondateur-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.fondateur-card:hover .fondateur-photo img {
+    transform: scale(1.05);
+}
+
+.fondateur-photo-border {
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 150, 64, 0.3);
+    pointer-events: none;
+    transition: var(--transition);
+}
+
+.fondateur-card:hover .fondateur-photo-border {
+    border-color: var(--primary-light);
+    box-shadow: 0 0 40px rgba(0, 150, 64, 0.2), inset 0 0 30px rgba(0, 150, 64, 0.05);
+}
+
+/* Light theme fondateurs */
+[data-theme="light"] .fondateur-text h3 {
+    color: #1a2332;
+}
+
+[data-theme="light"] .fondateur-badge {
+    background: rgba(0, 150, 64, 0.06);
+    border-color: rgba(0, 150, 64, 0.15);
+}
+
+[data-theme="light"] .fondateur-photo-border {
+    border-color: rgba(0, 150, 64, 0.15);
+}
+
+[data-theme="light"] .fondateur-card:hover .fondateur-photo-border {
+    border-color: var(--primary);
+    box-shadow: 0 4px 25px rgba(0, 150, 64, 0.1);
+}
+
+@media (max-width: 768px) {
+    .fondateur-card {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    .fondateur-card--reversed {
+        direction: ltr;
+    }
+    .fondateur-card .fondateur-text {
+        order: 2;
+        align-items: center;
+    }
+    .fondateur-card .fondateur-photo {
+        order: 1;
+        max-width: 220px;
+    }
+    .fondateur-badge {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fondateur-text h3 {
+        font-size: 1.3rem;
+    }
+}
